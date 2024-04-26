@@ -7,25 +7,13 @@
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
-  <style>
-    /* Custom styles */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-    }
-    .container {
-      margin-top: 50px;
-    }
-    .jumbotron {
-      background-color: #343a40;
-      color: #fff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
-<body>
+<body onload="slider()">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="#">Rehab App</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,35 +36,204 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
+<!-- nav bar -->
+
+
+
+  <div class="banner">
+    <div class="slider">
+        <img src="s1.jpg" id="slideimg">
+    </div>
+    <div class="overlay">
+     <!-- <div class="navbar">
+        <div class="logo">
+            <img src="mindflexlogo.png" >
+     </div>   
+     <div class="menu-icons">
+        <img src="user.png" >
+        <img src="doctor.png" > 
+        <img src="sign in.png" >
+     </div>
+
+    </div> -->
+    <!-- Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rehab App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- <nav> -->
+    <!-- <img src="standy logo.png" alt="Logo" class="logo" > -->
+    <!-- <ul>
+     
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#Services">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav> -->
+<!-- nav bar -->
+
+<!-- nav bar start -->
+<nav>    
+  <div class="logo">
+    <img src="logoss.png" alt="Logo">  &nbsp;
+
+    
+    <p   class="Title"  style="float: right" > MindFlex Rehabilitation </p>
+  </div>
+
+
+  <ul class="nav-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">signup</a></li>
+    <li><a href="#">Doctors</a></li>
+    <li><a href="#Services">Services</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</nav>
+
+
+
+<!-- nav bar end -->
+<div class="content">
+    <h1>WELCOME TO MINDFLEX REHABILITATION </h1>
+    <h3>your trusted partner in rehabilitation</h3>
+</div>
+<center> 
+<button type="button"  >GET STARTED </button >
+<button type="button" class="btn-2" > LEARN MORE </button></center>
+</div>
+</div>
+
+<script>
+var slideimg = document.getElementById("slideimg")
+var images = new Array(
+"s1.jpg",
+"image2.jpg",
+"image3.jpg",
+"image4.jpg"
+);
+var len =images.length;
+var i =0;
+function slider(){
+if(i>len-1){
+    i=0;
+}
+slideimg.src = images[i];
+i++;
+setTimeout('slider()',3000);
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid">
+  <!-- <div class="jumbotron jumbotron-fluid">
     <div class="container text-center">
       <h1 class="display-4">Welcome to Mindflex Rehabilitation</h1>
       <p class="lead">Your trusted partner in rehabilitation.</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Get Started</a>
     </div>
-  </div>
+  </div> -->
 
   <!-- Main Content -->
+  <h1 id="Services"></h1>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h2>Our Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed gravida nisi ut sapien tincidunt, eu dapibus leo ultrices.</p>
-        <p>Proin vitae sapien aliquet, fermentum purus non, blandit urna. Fusce vel nisi a odio semper vehicula.</p>
+        <p>•	Development of a VR-based exercise recommendation system that assesses user rehabilitation goals. <br> </p>
+          <p> •	Integration of an AI chat feature within the platform to provide initial solutions for mental and physical health inquiries. <br> </p>
+          <p> •	Creation of personalized dashboards within the application by selecting specific exercises, setting goals, adjusting difficulty levels, and tracking progress over time. <br> </p>
+           <p> •	Implementation of online virtual doctor appointments to offer accessible healthcare support. <br></p>
+          <p> •	Implementing gamification elements and motivational incentives within the VR environment to enhance user engagement. <br> </p>
+       
       </div>
-      <div class="col-md-6">
+
+
+
+ <!-- Your projects can go here -->
+ <div class="portfolio">
+  <div class="project">
+      <img src="p4.png" alt="Project 1">
+      <h2>Project 1</h2>
+      <p>Description of Project 1 goes here.</p>
+  </div>
+
+  <div class="project">
+      <img src="p5.png" alt="Project 2">
+      <h2>Project 2</h2>
+      <p>Description of Project 2 goes here.</p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="col-md-6">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed gravida nisi ut sapien tincidunt, eu dapibus leo ultrices.</p>
         <p>Proin vitae sapien aliquet, fermentum purus non, blandit urna. Fusce vel nisi a odio semper vehicula.</p>
-      </div>
+      </div> -->
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="footer bg-dark text-white mt-5">
+  <footer class="footer bg-dark text-white mt-5 mb-2">
     <div class="container text-center">
       <span class="text-muted">&copy; 2024 Rehab App. All rights reserved.</span>
     </div>
